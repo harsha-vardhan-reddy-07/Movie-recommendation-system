@@ -2,4 +2,4 @@ nltk
 streamlit
 scikit-learn
 scikit-learn
-urllib3
+gdown
