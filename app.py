@@ -2,11 +2,12 @@ import requests
 import streamlit as st
 import pickle
 import pandas as pd
+import urllib.request
 
 
 movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+similarity = pickle.load(open(urllib.request.urlopen('https://drive.google.com/file/d/1Oo4TIyZkYRwEg1bt6Jqyy9PSsUVz8fTu/view?usp=share_link')))
 
 # Function to fetch posters
 
