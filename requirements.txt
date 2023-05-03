@@ -1,5 +1,5 @@
 nltk
 streamlit
-sklearn
+scikit-learn
 scikit-learn
 urllib3
