@@ -7,7 +7,8 @@ import urllib3
 
 movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(open(urllib3.request.urlopen('https://drive.google.com/file/d/1Oo4TIyZkYRwEg1bt6Jqyy9PSsUVz8fTu/view?usp=share_link', 'rb')))
+# similarity = pickle.load(open(urllib3.request.urlopen('https://drive.google.com/file/d/1Oo4TIyZkYRwEg1bt6Jqyy9PSsUVz8fTu/view?usp=share_link', 'rb')))
+similarity = pd.read_pickle('https://drive.google.com/file/d/1Oo4TIyZkYRwEg1bt6Jqyy9PSsUVz8fTu/view?usp=share_link')
 
 # Function to fetch posters
 
