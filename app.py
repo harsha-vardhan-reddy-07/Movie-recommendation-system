@@ -47,6 +47,7 @@ def recommend(movie_title):
 
 
 st.title('CineMatch')
+st.text("A content-based movie recommendation system")
 
 selected_movie_name = st.selectbox(
     'Search/Select your favourite movie!',
