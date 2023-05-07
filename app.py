@@ -46,7 +46,7 @@ def recommend(movie_title):
     return recommended_movies, recommended_movies_posters
 
 
-st.title('Havar Recommender System')
+st.title('CineMatch')
 
 selected_movie_name = st.selectbox(
     'Search/Select your favourite movie!',
